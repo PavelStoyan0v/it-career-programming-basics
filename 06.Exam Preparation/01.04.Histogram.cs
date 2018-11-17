@@ -24,8 +24,8 @@ class Program
 
         foreach(double item in percentage)
         {
-            string percent = (item / n * 100).ToString("0.00");
-            Console.WriteLine($"{percent}%");
+            double percent = item / n * 100;
+            Console.WriteLine($"{percent:f2}%");
         }
     }
 }
